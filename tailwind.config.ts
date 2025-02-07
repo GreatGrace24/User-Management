@@ -1,4 +1,5 @@
 import colors from "tailwindcss/colors";
+import defaultTheme from "tailwindcss/defaultTheme";
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
@@ -8,6 +9,12 @@ module.exports = {
   ],
   theme: {
     extend: {
+      screens: {
+        "2xsm": "375px",
+        xsm: "425px",
+        "3xl": "2000px",
+        ...defaultTheme.screens,
+      },
       colors: {
         current: "currentColor",
         transparent: "transparent",
@@ -58,6 +65,7 @@ module.exports = {
         danger: "#D34053",
         warning: "#FFA70B",
       },
+
       fontFamily: {
         sans: ["Satoshi", "sans-serif"],
       },
