@@ -67,7 +67,7 @@ const menuGroups = [
           </svg>
         ),
         label: "User management",
-        route: "/user-management",
+        route: "/admin/user-management",
       },
       {
         icon: (

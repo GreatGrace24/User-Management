@@ -8,6 +8,11 @@ const Header = (props: {
   return (
     <header className="sticky top-0 z-50 flex w-full bg-white shadow-md">
       <div className="flex w-full items-center justify-between px-4 py-4 shadow-md md:px-6 2xl:px-11">
+        {/* Left Section: Added "User Management" */}
+        <div className="flex items-center">
+          <h1 className="font-bold text-xl text-gray-800">User Management</h1>
+        </div>
+
         {/* Hamburger Icon */}
         <div className="flex items-center lg:hidden">
           <button
@@ -20,13 +25,19 @@ const Header = (props: {
           >
             <div className="space-y-1">
               <span
-                className={`block h-0.5 w-6 bg-black transition-transform duration-300 ${props.sidebarOpen ? "rotate-45 translate-y-1.5" : ""}`}
+                className={`block h-0.5 w-6 bg-black transition-transform duration-300 ${
+                  props.sidebarOpen ? "rotate-45 translate-y-1.5" : ""
+                }`}
               ></span>
               <span
-                className={`block h-0.5 w-6 bg-black transition-opacity duration-300 ${props.sidebarOpen ? "opacity-0" : "opacity-100"}`}
+                className={`block h-0.5 w-6 bg-black transition-opacity duration-300 ${
+                  props.sidebarOpen ? "opacity-0" : "opacity-100"
+                }`}
               ></span>
               <span
-                className={`block h-0.5 w-6 bg-black transition-transform duration-300 ${props.sidebarOpen ? "-rotate-45 -translate-y-1" : ""}`}
+                className={`block h-0.5 w-6 bg-black transition-transform duration-300 ${
+                  props.sidebarOpen ? "-rotate-45 -translate-y-1" : ""
+                }`}
               ></span>
             </div>
           </button>
